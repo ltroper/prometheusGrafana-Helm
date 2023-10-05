@@ -69,7 +69,7 @@ helm install my-grafana grafana/grafana
 Create a Dockerfile in your project directory with the following content:
 
 ```Dockerfile
-FROM node:16
+FROM --platform=linux/amd64 node:16
 
 WORKDIR /usr/src/app
 
